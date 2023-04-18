@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: brown;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  height: 300px; 
+}
+
+.footer {
+  background-color: violet;
+  padding: 10px;
+  text-align: center;
+}
+
+
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+  <h2>Cabeçalho</h2>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:hotpink;">Coluna</div>
+  <div class="column" style="background-color:darkgreen;">Coluna</div>
+  <div class="column" style="background-color: lightcoral;">Coluna</div>
+</div>
+
+<div class="footer">
+  <p>Rodapé</p>
+</div>
+
+</body>
+</html>
+
+
